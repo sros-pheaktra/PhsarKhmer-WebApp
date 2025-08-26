@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Do ah nis pg -->
+    <title>PhsarKhmer | Bakery</title>
+
+    <!-- Impove SEO -->
+    <meta name="keywords" content="Cambodian products, made in Cambodia, Khmer goods, local products, Cambodian e-commerce, online shopping Cambodia, Cambodian brands, authentic Cambodia, shop Cambodia, Cambodian marketplace, Phnom Penh, Cambodia">
+    <meta name="description" content="PhsarKhmer is Cambodia’s trusted e-commerce platform dedicated to selling authentic products made in Cambodia. Shop local brands, support Khmer producers, and enjoy fast delivery across Phnom Penh and Cambodia.">
+    
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/PhsarKhmer_4x4.jpg" type="image/x-icon">
+
+    <!-- Tailwind Link CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <!-- Tailwind CLI -->
+    <!-- <link rel="stylesheet" href="./assets/css/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="w-full bg-[#F5F5F5] dark:bg-[#393E46] text-[#21242A] dark:text-white font-['Poppins', sans-serif]">
+    <main class="pt-8 md:pt-30 w-full mx-auto">
+
+        <section class="bg-white dark:bg-gray-800 p-8 rounded-lg md:shadow-md w-full max-w-md text-gray-800 dark:text-white mx-auto">
+            <div class="text-center mb-8">
+                <h1 id="title" class="text-2xl font-bold text-[#318D23]">Welcome to PhsarKhmer</h1>
+                <p id="subtitle" class="text-gray-600 dark:text-gray-300">Please fill informations to Sign Up</p>
+            </div>
+
+            <form id="signupForm" class="space-y-6">
+  <div>
+    <label for="username"
+      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Username</label>
+    <input type="text" id="username" name="username" required
+      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+  </div>
+
+  <div>
+    <label for="email"
+      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+    <input type="email" id="email" name="email" required placeholder="your@email.com"
+      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+  </div>
+
+  <div>
+    <label for="password"
+      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
+    <input type="password" id="password" name="password" required placeholder="••••••••"
+      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+  </div>
+
+  <div>
+    <label for="confirm-password"
+      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Confirm Password</label>
+    <input type="password" id="confirm-password" name="confirm-password" required placeholder="••••••••"
+      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+  </div>
+
+  <div>
+    <button type="submit"
+      class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#318D23] hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
+      Sign Up
+    </button>
+  </div>
+</form>
+
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-300 dark:border-gray-600"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span id="or-text" class="px-2 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-300">ឬ
+                            or sign up with</span>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-2 gap-3">
+                    <button type="button" 
+                        class="w-full inline-flex justify-center py-2 px-4 border border-gray-500 rounded-md shadow-sm bg-white dark:bg-gray-700 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                            <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                            <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                            </polygon>
+                            <path fill="#c62828"
+                                d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                            </path>
+                            <path fill="#fbc02d"
+                                d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                            </path>
+                        </svg><span class="sr-only">button</span>
+                    </button>
+
+                    <button type="button"
+                        class="w-full inline-flex justify-center py-2 px-4 border border-gray-500 rounded-md shadow-sm bg-white dark:bg-gray-700 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 48 48">
+                            <path fill="#3f51b5" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
+                            <path fill="#fff"
+                                d="M29.368,24H26v12h-5V24h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H30v4h-2.287 C26.104,16,26,16.6,26,17.723V20h4L29.368,24z">
+                            </path>
+                        </svg><span class="sr-only">button</span>
+                    </button>
+                </div>
+
+                <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-300">
+                    <span id="account-text">Already have an account?</span>
+                    <a href="log_in.html" id="login-link" class="font-medium text-[#318D23] hover:text-green-400">Log in</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../assets/js/sign-up.js">
+</script>
+</html>

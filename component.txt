@@ -1,0 +1,319 @@
+Font-Awesome link:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+Tailwidn CDN
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+Tailwind CLI:
+Installation: npm install tailwindcss @tailwindcss/cli
+Implementation: npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch 
+
+
+Google font: 
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+How to escape from 2 folder
+
+scr="../../file you want to link to"
+note: ../ = escape one folder
+
+
+color:
+primary-color: #318D23
+secondary-color: #4FB140
+accent-color: #E92424
+star-color: #F8DB23
+sub-text-color: #545454
+line-color: #E5E5E5
+
+DM-Primary-Color: #18230F
+DM-Secondary-Color: #27391C
+DM-Accent-Color: #255F38
+DM-Secondary-Accent-Color: #1F7D53
+
+
+
+
+
+To implement dark mode
+<script>
+                    const toggleBtn = document.getElementById('dark-mode-toggle');
+                    toggleBtn.addEventListener('click', () => {
+                        document.documentElement.classList.toggle('dark');
+                    });
+                </script>
+
+
+
+
+                <!-- Script -->
+        <script>
+            const html = document.documentElement;
+            const toggleDarkMode = document.getElementById("toggleDarkMode");
+            toggleDarkMode.addEventListener("click", () => {
+                html.classList.toggle("dark");
+                localStorage.setItem("theme", html.classList.contains("dark") ? "dark" : "light");
+            });
+            if (localStorage.getItem("theme") === "dark") {
+                html.classList.add("dark");
+            }
+
+            const toggleLang = document.getElementById("toggleLang");
+            let currentLang = 'en';
+
+            const labels = {
+                en: {
+                    title: "Forgot your password?",
+                    subtitle: "Enter your email and we'll send you a link to reset your password.",
+                    email: "Email Address",
+                    submit: "Send Reset Link",
+                    back: "← Back to login"
+                },
+                km: {
+                    title: "ភ្លេចលេខសម្ងាត់របស់អ្នក?",
+                    subtitle: "សូមបញ្ចូលអ៊ីមែលរបស់អ្នក ដើម្បីទទួលបានតំណភ្ជាប់សម្រាប់កំណត់ពាក្យសម្ងាត់ថ្មី។",
+                    email: "អាសយដ្ឋានអ៊ីមែល",
+                    submit: "ផ្ញើតំណកំណត់ពាក្យសម្ងាត់",
+                    back: "← ត្រឡប់ទៅការចូល"
+                }
+            };
+
+            toggleLang.addEventListener("click", () => {
+                currentLang = currentLang === 'km' ? 'en' : 'km';
+                const t = labels[currentLang];
+                document.getElementById("title").textContent = t.title;
+                document.getElementById("subtitle").textContent = t.subtitle;
+                document.getElementById("label-email").textContent = t.email;
+                document.getElementById("submit-button").textContent = t.submit;
+                document.getElementById("back-link").textContent = t.back;
+            });
+        </script>
+
+
+
+
+
+
+        <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/dry-groceries/noodle/Mee Chiet-beef-stew.png" alt="Mee Chiet" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            Mee Chiet Beef Stew
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            Mee Chiet
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $0.25
+                            </p>
+                            <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/dry-groceries/noodle/Mee Chiet-beef-stew.png" alt="Mee Chiet" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            Mee Chiet Beef Stew
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            Mee Chiet
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $0.25
+                            </p>
+                            <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/beverages/milk/Pure Milk.png" alt="Pure Milk" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            Kirisu Pure Milk
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            Kirirsu Farm
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <!-- <i class="fa-regular fa-star text-[#545454]"></i> -->
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $4.50
+                            </p>
+                            <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/pet-foods-and-pet-care/dog-food.jpg" alt="Dog Food" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            Vitapure Dog Food
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            Wild and Tame Pet Food
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-regular fa-star text-[#545454]"></i>
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $8.75
+                            </p>
+                            
+                            <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/beverages/powdered-drink-mixed/KOFI Shake ‘n Ice Matcha Green Tea.png" alt="Mee Chiet" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            KOFI Shake ‘n Ice Matcha Green Tea
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            Kofi
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <!-- <i class="fa-regular fa-star text-[#545454]"></i> -->
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $7.50
+                            </p>
+                            
+                             <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="container w-full shadow-md rounded-lg bg-white dark:bg-[#31363F] border border-[#E5E5E5] dark:border-[#222831] p-4 md:p-x- p-y-8">
+                    <a href="./product/product-details.html">
+                        <!-- change images nis -->
+                        <img src="./assets/images/personal-care-product/oral-care/smile_cambodia.jpg" alt="Whitening Toothpaste" class="w-full mb-2 h-auto object-cover overflow-hidden cursor-pointer rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                    </a>
+                    <article class="md:mt-4">
+                        <h3 class="text-[1rem] md:text-[20px] font-semibold line-clamp-1">
+                            Whitening Toothpaste
+                        </h3>
+                        <p class="text-[12px] md:text-[18px] mt-2 font-semibold line-clamp-1 text-[#545454]">
+                            SmileLab
+                        </p>
+                        <p class="text-[12px] md:text-[1.2rem] mt-2 font-semibold">
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <i class="fa-solid fa-star text-[#f5db23]"></i>
+                            <!-- <i class="fa-regular fa-star text-[#545454]"></i> -->
+                        </p>
+                        <div class="mt-2 md:mt-10 w-full flex justify-between items-center">
+                            <p class="text-[1rem] md:text-[2rem] font-semibold text-[#E92424]">
+                                $5.50
+                            </p>
+                            
+                             <div class="flex items-center gap-2 md:gap-4">
+                                <button type="button" class="addToCartBtn text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to cart</span>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button type="button" class="addToBuyingList text-[1rem] md:text-[1.5rem] text-[#318D23] border border-[#318D23] px-2 rounded-sm md:rounded-md hover:bg-[#318D23] hover:text-white transition-colors duration-300">
+                                    <span class="sr-only">Add to Buyinglist</span>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>

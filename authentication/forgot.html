@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Do ah nis pg -->
+    <title>PhsarKhmer | Bakery</title>
+
+    <!-- Impove SEO -->
+    <meta name="keywords" content="Cambodian products, made in Cambodia, Khmer goods, local products, Cambodian e-commerce, online shopping Cambodia, Cambodian brands, authentic Cambodia, shop Cambodia, Cambodian marketplace, Phnom Penh, Cambodia">
+    <meta name="description" content="PhsarKhmer is Cambodia’s trusted e-commerce platform dedicated to selling authentic products made in Cambodia. Shop local brands, support Khmer producers, and enjoy fast delivery across Phnom Penh and Cambodia.">
+    
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/PhsarKhmer_4x4.jpg" type="image/x-icon">
+
+    <!-- Tailwind Link CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <!-- Tailwind CLI -->
+    <!-- <link rel="stylesheet" href="./assets/css/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="w-full bg-[#F5F5F5] dark:bg-[#393E46] text-[#21242A] dark:text-white font-['Poppins', sans-serif]">
+    <main class="pt-8 md:pt-30 w-full mx-auto">
+
+        <section class="bg-white dark:bg-gray-800 p-8 rounded-lg md:shadow-md w-full max-w-md text-gray-800 dark:text-white mx-auto">
+            <h1 id="title" class="text-2xl font-bold text-green-600 mb-2">Forgot your password?</h1>
+            <p id="subtitle" class="text-gray-600 dark:text-gray-300 mb-6">
+                Enter your email and we'll send you a link to reset your password.
+            </p>
+
+            <form class="space-y-5">
+                <div>
+                    <label id="label-email" for="email"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 block w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 dark:text-white border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+                </div>
+
+                <button id="submit-button" type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-md transition">
+                    Send Reset Link
+                </button>
+            </form>
+
+            <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-300">
+                <a href="login.html" id="back-link" class="text-green-600 hover:underline dark:text-green-400">← Back to
+                    login</a>
+            </p>
+        </section>
+    </main>
+</body>
+<script src="../assets/js/utils_for_one_folder.js">
+</script>
+</html>
